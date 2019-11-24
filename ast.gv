@@ -1,0 +1,14 @@
+digraph G {
+    I[ label="if", shape="rectangle", fontname="courier" ];
+    P[ label="equals", shape="rectangle", fontname="courier" ];
+    A[ label="x", shape="rectangle", fontname="courier" ];
+    B[ label="0", shape="rectangle", fontname="courier" ];
+    T[ label="1", shape="rectangle", fontname="courier" ];
+    F[ label="2", shape="rectangle", fontname="courier" ];
+
+    I -> P;
+    P -> A;
+    P -> B;
+    I -> T;
+    I -> F;
+}

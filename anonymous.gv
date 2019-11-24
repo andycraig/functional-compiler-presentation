@@ -1,0 +1,16 @@
+digraph G {
+    A[ label="CALL", shape="rectangle", fontname="courier", fillcolor="orange", style="filled" ];
+    C[ label="lambda", shape="rectangle", fontname="courier", fillcolor="lightblue", style="filled" ];
+    D[ label="x", shape="rectangle", fontname="courier", fillcolor="lightblue", style="filled" ];
+    E[ label="plus", shape="rectangle", fontname="courier", fillcolor="lightblue", style="filled" ];
+    F[ label="x", shape="rectangle", fontname="courier", fillcolor="lightblue", style="filled" ];
+    G[ label="1", shape="rectangle", fontname="courier", fillcolor="lightblue", style="filled" ];
+    H[ label="3", shape="rectangle", fontname="courier", fillcolor="orange", style="filled" ];
+
+    A -> C;
+    C -> D;
+    C -> E;
+    E -> F;
+    E -> G;
+    A -> H;
+}

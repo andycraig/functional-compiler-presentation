@@ -1,0 +1,10 @@
+digraph G {
+    A[ label="'(if (equals x 0) 1 2)'", shape="rectangle", fontname="courier" ];
+    B[ label="'(' 'if' '(' 'equals' 'x' '0' ')' '1' '2' ')'", shape="rectangle", fontname="courier" ];
+    C[ label="Abstract Syntax Tree", shape="rectangle", fontname="helvetica" ];
+    D[ label="mov rax, rdi\lmov rbx, QWORD [rax+0]\l", shape="rectangle", fontname="courier" ];
+
+    A -> B [ label="  tokenise", fontname="helvetica" ];
+    B -> C [ label="  parse", fontname="helvetica"  ];
+    C -> D [ label="  emit", fontname="helvetica"  ];
+}
